@@ -1,0 +1,20 @@
+function Logo() {
+  return (
+    <svg 
+      width="40" 
+      height="40" 
+      viewBox="0 0 40 40" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      className="logo-svg"
+    >
+      <circle cx="20" cy="20" r="18" fill="#0066cc" stroke="#004d99" strokeWidth="2"/>
+      <path d="M20 8L20 32M8 20L32 20" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+      <circle cx="20" cy="20" r="6" fill="white"/>
+      <path d="M20 14L20 26M14 20L26 20" stroke="#0066cc" strokeWidth="1.5" strokeLinecap="round"/>
+    </svg>
+  )
+}
+
+export default Logo
+
