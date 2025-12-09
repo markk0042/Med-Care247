@@ -156,7 +156,7 @@ function Training() {
                 {/* Content Section */}
                 <div className="course-content-section">
                   <div className="course-content-header">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                    <div className="course-content-header-wrapper">
                       <h2>{course.title}</h2>
                       {course.comingSoon && (
                         <span className="coming-soon-badge">{course.comingSoonText || 'Coming Soon'}</span>

@@ -33,6 +33,12 @@
   background: var(--bg-light);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .course-section-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -97,10 +103,22 @@
   min-height: 400px;
 }
 
+.course-content-header {
+  margin-bottom: 1.5rem;
+}
+
+.course-content-header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
 .course-content-header h2 {
   font-size: 2rem;
   color: var(--primary-color);
-  margin: 0 0 1.5rem 0;
+  margin: 0;
   line-height: 1.3;
 }
 
@@ -212,6 +230,18 @@
   font-size: 1.4rem;
 }
 
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .facilities-section {
   background: var(--white);
   padding: 3rem;
@@ -242,7 +272,24 @@
     direction: ltr;
   }
 
+  /* Reset grid column assignments on mobile */
+  .course-section-layout.reverse .course-image-section,
+  .course-section-layout .course-image-section {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .course-section-layout.reverse .course-content-section,
+  .course-section-layout .course-content-section {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
   .course-image-section {
+    min-height: 300px;
+  }
+
+  .course-image {
     min-height: 300px;
   }
 
@@ -252,28 +299,228 @@
 
   .course-content-section {
     padding: 2rem;
+    min-height: auto;
+  }
+
+  .training-hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .training-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+
+  .training-content {
+    padding: 3rem 0;
+  }
+
+  .facilities-section {
+    padding: 2.5rem 2rem;
+  }
+
+  .facilities-section h2 {
+    font-size: 1.75rem;
   }
 }
 
 @media (max-width: 768px) {
+  .training-hero {
+    padding: 2.5rem 1rem;
+  }
+
   .training-hero h1 {
     font-size: 2rem;
+    line-height: 1.2;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
   }
 
-  .course-content-header h2 {
-    font-size: 1.5rem;
+  .hero-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .training-content {
+    padding: 2rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .course-section-layout {
+    margin-bottom: 2.5rem;
+    border-radius: 8px;
+  }
+
+  .course-image-section {
+    min-height: 250px;
+  }
+
+  .course-image {
+    min-height: 250px;
+  }
+
+  .course-image-placeholder {
+    min-height: 250px;
   }
 
   .course-content-section {
     padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .course-content-header h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .course-content-header {
+    margin-bottom: 1rem;
+  }
+
+  .course-content-header-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .coming-soon-badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .course-meta {
+    margin-bottom: 1rem;
+  }
+
+  .course-meta p {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .course-description {
+    margin-bottom: 1.5rem;
+  }
+
+  .course-description p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .course-expanded-details {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .course-info-block {
+    margin-bottom: 1.5rem;
+  }
+
+  .course-info-block h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .course-info-block p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .course-requirements {
+    margin-top: 0.75rem;
+  }
+
+  .course-requirements li {
+    padding: 0.6rem 0;
+    padding-left: 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .course-price {
+    font-size: 1.1rem;
+  }
+
+  .course-price strong {
+    font-size: 1.2rem;
   }
 
   .facilities-section {
     padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .facilities-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .facilities-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .training-hero {
+    padding: 2rem 1rem;
+  }
+
+  .training-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .course-content-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .course-content-section {
+    padding: 1.25rem;
+  }
+
+  .course-image-section {
+    min-height: 200px;
+  }
+
+  .course-image {
+    min-height: 200px;
+  }
+
+  .course-image-placeholder {
+    min-height: 200px;
+  }
+
+  .facilities-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .facilities-section h2 {
+    font-size: 1.35rem;
   }
 }
 
