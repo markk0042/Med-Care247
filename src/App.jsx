@@ -7,6 +7,7 @@ import Contact from './pages/Contact'
 import WorkForUs from './pages/WorkForUs'
 import Training from './pages/Training'
 import StaffZone from './pages/StaffZone'
+import Policies from './pages/Policies'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/work-for-us" element={<WorkForUs />} />
             <Route path="/training" element={<Training />} />
             <Route path="/staff-zone" element={<StaffZone />} />
+            <Route path="/policies" element={<Policies />} />
           </Routes>
         </main>
         <Footer />

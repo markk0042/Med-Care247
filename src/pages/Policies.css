@@ -1,0 +1,150 @@
+.policies {
+  min-height: 100vh;
+}
+
+.policies-hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.policies-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.policies-hero .hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.policies-content {
+  padding: 4rem 2rem;
+}
+
+.policies-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+}
+
+.policy-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e0e0e0;
+}
+
+.policy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.policy-card-content {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.policy-card h2 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.policy-card p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.policy-download-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.policy-download-btn span {
+  font-size: 1.25rem;
+}
+
+.policy-download-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.policies-note {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.policies-note p {
+  margin: 0;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.policies-note a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.policies-note a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .policies-hero h1 {
+    font-size: 2rem;
+  }
+
+  .policies-hero .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .policies-content {
+    padding: 2rem 1rem;
+  }
+
+  .policies-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .policy-card {
+    padding: 1.5rem;
+  }
+}
+

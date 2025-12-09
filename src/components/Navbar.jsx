@@ -82,6 +82,15 @@ function Navbar() {
               Staff Zone
             </Link>
           </li>
+          <li>
+            <Link 
+              to="/policies" 
+              className={isActive('/policies') ? 'active' : ''}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Policies
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

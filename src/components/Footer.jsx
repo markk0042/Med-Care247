@@ -22,6 +22,7 @@ function Footer() {
               <li><Link to="/work-for-us">Work For Us</Link></li>
               <li><Link to="/training">Training</Link></li>
               <li><Link to="/staff-zone">Staff Zone</Link></li>
+              <li><Link to="/policies">Policies</Link></li>
             </ul>
           </div>
           
