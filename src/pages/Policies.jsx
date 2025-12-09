@@ -4,17 +4,17 @@ function Policies() {
   const policies = [
     {
       id: 1,
-      title: 'Privacy Policy',
-      description: 'Our privacy policy outlines how we collect, use, and protect your personal information.',
-      file: '/policies/privacy-policy.pdf',
-      downloadName: 'MedCare247-Privacy-Policy.pdf'
+      title: 'Appeals and Procedure',
+      description: 'Our appeals and procedure policy outlines the process for handling appeals and complaints.',
+      file: '/policies/MedCare247 Appeals and Procedure.pdf',
+      downloadName: 'MedCare247 Appeals and Procedure.pdf'
     },
     {
       id: 2,
-      title: 'Terms and Conditions',
-      description: 'Our terms and conditions govern the use of our services and website.',
-      file: '/policies/terms-and-conditions.pdf',
-      downloadName: 'MedCare247-Terms-and-Conditions.pdf'
+      title: 'Policy Document',
+      description: 'Our comprehensive policy document covering company policies and procedures.',
+      file: '/policies/MedCare247 POLICY DOCUMENT.pdf',
+      downloadName: 'MedCare247 POLICY DOCUMENT.pdf'
     }
   ]
 
