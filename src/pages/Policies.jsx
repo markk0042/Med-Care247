@@ -15,6 +15,13 @@ function Policies() {
       description: 'Our comprehensive policy document covering company policies and procedures.',
       file: '/policies/MedCare247 POLICY DOCUMENT.pdf',
       downloadName: 'MedCare247 POLICY DOCUMENT.pdf'
+    },
+    {
+      id: 3,
+      title: 'NQP Policies and Procedures',
+      description: 'Policies and procedures for Newly Qualified Paramedics (NQP).',
+      contactInfo: 'Please contact Learning and Development for further information.',
+      isContactOnly: true
     }
   ]
 
@@ -54,14 +61,27 @@ function Policies() {
                 <div className="policy-card-content">
                   <h2>{policy.title}</h2>
                   <p>{policy.description}</p>
+                  {policy.contactInfo && (
+                    <p className="policy-contact-info">{policy.contactInfo}</p>
+                  )}
                 </div>
-                <button
-                  className="btn btn-primary policy-download-btn"
-                  onClick={() => handleDownload(policy)}
-                >
-                  <span>📄</span>
-                  Download PDF
-                </button>
+                {policy.isContactOnly ? (
+                  <a
+                    href="/contact"
+                    className="btn btn-primary policy-contact-btn"
+                  >
+                    <span>📧</span>
+                    Contact Learning & Development
+                  </a>
+                ) : (
+                  <button
+                    className="btn btn-primary policy-download-btn"
+                    onClick={() => handleDownload(policy)}
+                  >
+                    <span>📄</span>
+                    Download PDF
+                  </button>
+                )}
               </div>
             ))}
           </div>
