@@ -76,7 +76,7 @@ function Training() {
         'Citizen Aid',
         'Basic Life Support & Automated External Defibrillation (BLS/AED)'
       ],
-      costInfo: 'If you are interested in undertaking one of our First Aid courses, for group bookings or to discuss delivery at your premises, please get in touch with us at training@eliteems.com. You can find all upcoming courses in the section below.'
+      costInfo: 'If you are interested in undertaking one of our First Aid courses, for group bookings or to discuss delivery at your premises, please get in touch with us at info@medcare247.co.uk. You can find all upcoming courses in the section below.'
     },
     {
       id: 5,

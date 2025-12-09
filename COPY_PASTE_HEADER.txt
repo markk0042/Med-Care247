@@ -1,0 +1,30 @@
+═══════════════════════════════════════════════════════════════
+                    MedCare247
+═══════════════════════════════════════════════════════════════
+
+INSTRUCTIONS FOR WORD:
+1. Copy the text "MedCare247" below
+2. Paste into Word
+3. Format as: Arial, 28pt, Bold, Color: Blue (#0066cc or RGB: 0, 102, 204)
+4. Insert the logo image (logo.svg) next to the text
+5. Align logo and text horizontally
+
+═══════════════════════════════════════════════════════════════
+
+MedCare247
+
+═══════════════════════════════════════════════════════════════
+
+LOGO DETAILS:
+- File location: public/logo.svg
+- Colors: Blue circle (#0066cc) with white medical cross
+- Size: 50x50 pixels recommended for documents
+
+TEXT FORMATTING:
+- Font: Arial
+- Size: 28pt (or 24pt for smaller headers)
+- Weight: Bold
+- Color: Blue (#0066cc or RGB: 0, 102, 204)
+
+═══════════════════════════════════════════════════════════════
+
